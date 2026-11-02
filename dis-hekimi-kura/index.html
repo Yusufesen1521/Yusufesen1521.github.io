@@ -27,6 +27,7 @@ section[hidden]{display:none}
 .controls{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
 input[type=search],select{font:inherit;font-size:13px;padding:6px 8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
 .tbox{max-height:36rem;overflow:auto;border-top:1px solid var(--line)}
+.tbox.full{max-height:none}
 table{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
 th{position:sticky;top:0;background:var(--panel);text-align:left;font-weight:600;padding:6px 8px;border-bottom:1px solid var(--line);white-space:nowrap;cursor:pointer;user-select:none}
 th.ns{cursor:default}
@@ -73,7 +74,7 @@ footer{color:var(--muted);font-size:12px}
     <div class="card">
       <h2>Diş tabibi için önerilen 10 tercih</h2>
       <p class="muted">Öneri skoru = fırsat puanı + kadro sayısının log2'si. Çok kadrolu kurumlar geç tükendiği için öne çıkıyor. "Sıra no", münhal listesindeki satır numarası.</p>
-      <div class="tbox"><table id="t-ilk10"></table></div>
+      <div class="tbox full"><table id="t-ilk10"></table></div>
     </div>
     <div class="card warn">
       <h2>Bu listeyi nasıl kullanmalı</h2>
